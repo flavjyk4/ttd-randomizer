@@ -20,7 +20,7 @@ def onkey(event):
         if key > 0 and key < 7:
             print(f'Postać {key}: {choice(units).removesuffix(newline)}')
         elif key > 6 and key < 9:
-            print(f'Utrudnienie {key}: {choice(impediments)}')
+            print(f'Utrudnienie {key - 6}: {choice(impediments)}')
         else:
             rollall()
     except ValueError:
